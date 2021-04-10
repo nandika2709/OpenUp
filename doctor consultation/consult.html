@@ -13,9 +13,8 @@
         <link rel="stylesheet" href="consult.css">
     </head>
     <body>
-    </body>
+    
     <nav>
-        <a href="" style="text-decoration: none; color: white;">
         <div id="brand">
             <img src="https://cdn3.iconfinder.com/data/icons/hotel-and-spa-flat-1/64/lotus-flower-spa-512.png" id= "logo" alt="Healthy Me" title="Healthy Me" style = "margin-left:30px;">
             <span style = "margin-left:10px;">Open Up!</span>
@@ -29,41 +28,42 @@
 <p> Open Up!</p>
 </div>
 <div class="form fl">
-                <form method="POST">
+                <form name="login">
                     <p class="name">
 Username<span class="s">*</span></p>
 <p>
-<input type="text" name="fname" placeholder="" class="name-inp"></p>
+<input type="text" name="consuler" placeholder="Enter username" class="name-inp"></p>
 
                     <p class="name">
 E mail ID<span class="s">*</span></p>
 <p>
-<input type="email" name="uid" placeholder="" class="name-inp"></p>
-<div class="form__radio-group">
-    <input type="radio" class="form__radio-input form__radio-input--1" id="small" name="size">
-    <label for="small" class="form__radio-label">
-        <span class="form__radio-button"  onclick="btn__user()"></span>
-        user
-    </label>
-     <div class="form__user" hidden>
-<button type="button" class="btn user__side" onclick="generate()">Generate</button>
-</div>
+<input type="password" name="password" placeholder="Enter password" class="name-inp"></p>
 
-</div>
-<div class="form__radio-group">
-    <input type="radio" class="form__radio-input form__radio-input--2" id="large" name="size">
-    <label for="large" class="form__radio-label">
-         <span class="form__radio-button" onclick="btn__listener()"></span>
-        listener
-    </label>
-    </div>
-    
+<input type="button" name="sb" onclick="enter(this.form)" class="sub" value="login"></p>
 
-
-
-<input type="submit" name="sb" value="SUBMIT" class="sub"></p>
 </form>
+<div class="geust">
+    <br><br>
+    <button onclick="entergeust()" class="sub">guest</button>
 </div>
 </div>
 </div>
+</div>
+<script>
+    function enter(form)
+    {
+     var x= form.consuler.value;
+    var p=form.password.value;
+    if(x=="OpenUp" && p =="letstalk"){
+        window.open('http://localhost:3000')
+    }
+    else {
+        alert("Incorrect username or password");
+    }}
+    function entergeust()
+    {
+        window.open('http://localhost:3000');
+    }
+ </script>
+</body>
 </html>

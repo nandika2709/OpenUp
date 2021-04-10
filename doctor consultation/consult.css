@@ -134,17 +134,6 @@ textarea{
     border: 1px solid rgb(139, 139, 139);
 }
 
-.gender{
-    margin: 15px 0 0 5%;
-    color: #fff;
-    font-size: 16px;
-}
-.gen{
-    font-size: 18px;
-}
-.genm{
-    margin-left: 5%;
-}
 .sub{
     width: 90%;
     margin: 15px 0 0 5%;
@@ -152,6 +141,16 @@ textarea{
     height: 40px;
     background-color: #031c30;
     border: 1px solid rgb(17, 67, 107);
+    border-radius: 10px;
+    color: #fff;
+}
+.sub{
+    width: 90%;
+    margin: 15px 0 0 5%;
+    font-size: 16px;
+    height: 80px;
+    background-color:rgb(18, 87, 18);
+    border: 1px solid green;
     border-radius: 10px;
     color: #fff;
 }
